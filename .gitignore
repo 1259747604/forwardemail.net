@@ -1,5 +1,4 @@
 *.awspublish*
-*.env
 !.gulpfile.env
 !test/.env
 *.lcov
@@ -68,8 +67,6 @@ yarn.lock
 *-VI.md
 *-zh.md
 *-ZH.md
-.env.production
-hosts.yml
 !ansible/playbooks/templates/hosts.yml
 deployment-keys
 *.csr
