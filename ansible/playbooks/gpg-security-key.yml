@@ -3,6 +3,7 @@
 
 ---
 - hosts: imap:pop3:smtp:http:bree:sqlite
+  connection: local
   name: GPG Security Key
   vars_prompt:
     - name: input_profile

@@ -3,6 +3,7 @@
 
 ---
 - hosts: imap:pop3:smtp:http:bree:sqlite
+  connection: local
   name: Deployment Keys
   tasks:
     - name: Check if key exists
