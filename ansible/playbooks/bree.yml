@@ -9,6 +9,7 @@
 - name: Import SSH keys playbook
   import_playbook: ssh-keys.yml
 - hosts: bree
+  connection: local
   name: Hostname
   become: true
   become_user: root
@@ -17,6 +18,7 @@
       hostname:
         name: "{{ lookup('env', 'BREE_HOST') }}"
 - hosts: bree
+  connection: local
   name: Bree
   become: true
   become_user: root

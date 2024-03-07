@@ -9,6 +9,7 @@
 - name: Import SSH keys playbook
   import_playbook: ssh-keys.yml
 - hosts: smtp
+  connection: local
   name: Hostname
   become: true
   become_user: root
@@ -18,6 +19,7 @@
         name: "{{ lookup('env', 'SMTP_HOST') }}"
 
 - hosts: smtp
+  connection: local
   name: SMTP
   become: true
   become_user: root

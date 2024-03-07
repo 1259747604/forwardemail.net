@@ -10,6 +10,7 @@
   import_playbook: ssh-keys.yml
 
 - hosts: sqlite
+  connection: local
   name: Hostname
   become: true
   become_user: root
@@ -19,6 +20,7 @@
         name: "{{ lookup('env', 'SQLITE_HOST') }}"
 
 - hosts: sqlite
+  connection: local
   name: SQLITE
   become: true
   become_user: root

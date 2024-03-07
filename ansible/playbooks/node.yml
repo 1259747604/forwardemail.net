@@ -3,6 +3,7 @@
 
 ---
 - hosts: imap:pop3:smtp:http:bree:sqlite:mx1:mx2
+  connection: local
   name: Node.js
   become: true
   become_user: root

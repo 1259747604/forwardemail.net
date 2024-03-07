@@ -10,6 +10,7 @@
   import_playbook: ssh-keys.yml
 
 - hosts: pop3
+  connection: local
   name: Hostname
   become: true
   become_user: root
@@ -19,6 +20,7 @@
         name: "{{ lookup('env', 'POP3_HOST') }}"
 
 - hosts: pop3
+  connection: local
   name: POP3
   become: true
   become_user: root

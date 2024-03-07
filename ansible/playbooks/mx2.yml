@@ -10,6 +10,7 @@
   import_playbook: ssh-keys.yml
 
 - hosts: mx2
+  connection: local
   name: Hostname
   become: true
   become_user: root
@@ -19,6 +20,7 @@
         name: "{{ lookup('env', 'MX2_HOST') }}"
 
 - hosts: mx2
+  connection: local
   name: MX2
   become: true
   become_user: root
