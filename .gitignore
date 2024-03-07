@@ -72,7 +72,6 @@ deployment-keys
 *.key
 *.ca-bundle
 *.crt
-.env.test
 .gapp-creds.json
 
 Thumbs.db
