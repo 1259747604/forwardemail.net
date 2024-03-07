@@ -441,120 +441,120 @@ Users.add(object);
 
 // Set plan at date to a default value
 // of when user was created or >= their first payment
-Users.pre('validate', async function (next) {
-  // NOTE: this is a fallback in case our migration script hasn't run yet
-  if (!_.isDate(this[config.userFields.planSetAt])) {
-    const payment = await Payments.findOne(
-      {
-        user: this._id
-      },
-      null,
-      { sort: { invoice_at: 1 } }
-    );
+// Users.pre('validate', async function (next) {
+//   // NOTE: this is a fallback in case our migration script hasn't run yet
+//   if (!_.isDate(this[config.userFields.planSetAt])) {
+//     const payment = await Payments.findOne(
+//       {
+//         user: this._id
+//       },
+//       null,
+//       { sort: { invoice_at: 1 } }
+//     );
 
-    this[config.userFields.planSetAt] = payment
-      ? new Date(payment.invoice_at)
-      : new Date(this._id.getTimestamp() || Date.now());
-  }
+//     this[config.userFields.planSetAt] = payment
+//       ? new Date(payment.invoice_at)
+//       : new Date(this._id.getTimestamp() || Date.now());
+//   }
 
-  next();
-});
+//   next();
+// });
 
-// Plan expires at should get updated everytime the user is saved
-Users.pre('save', async function (next) {
-  const user = this;
-  // If user has a paid plan then consider their email verified
-  if (user.plan !== 'free') user[config.userFields.hasVerifiedEmail] = true;
+// // Plan expires at should get updated everytime the user is saved
+// Users.pre('save', async function (next) {
+//   const user = this;
+//   // If user has a paid plan then consider their email verified
+//   if (user.plan !== 'free') user[config.userFields.hasVerifiedEmail] = true;
 
-  // If user is on the free plan then return early
-  if (user.plan === 'free') {
-    user[config.userFields.planExpiresAt] = new Date(
-      user[config.userFields.planSetAt]
-    );
-    return next();
-  }
+//   // If user is on the free plan then return early
+//   if (user.plan === 'free') {
+//     user[config.userFields.planExpiresAt] = new Date(
+//       user[config.userFields.planSetAt]
+//     );
+//     return next();
+//   }
 
-  try {
-    //
-    // the way to calculate plan expiry is to
-    // take the sum of all payment durations where the payment invoice
-    // is >= the user's current plan set at date
-    // and then add this sum to the user's plan set at
-    //
-    // NOTE: we don't care about the amount, e.g. we could have refunded
-    //       a customer because we had an outage, but we don't want
-    //       that to effect their plan's expiration since refunds are on us
-    //
-    // NOTE: if a user did get a refund from changing plans,
-    //       then their plan set at will change, so that takes care of that
-    //
-    const payments = await Payments.find({
-      user: user._id,
-      invoice_at: {
-        $gte: new Date(user[config.userFields.planSetAt])
-      },
-      // Payments must match the user's current plan
-      plan: user.plan
-    })
-      .sort('invoice_at')
-      .lean()
-      .exec();
+//   try {
+//     //
+//     // the way to calculate plan expiry is to
+//     // take the sum of all payment durations where the payment invoice
+//     // is >= the user's current plan set at date
+//     // and then add this sum to the user's plan set at
+//     //
+//     // NOTE: we don't care about the amount, e.g. we could have refunded
+//     //       a customer because we had an outage, but we don't want
+//     //       that to effect their plan's expiration since refunds are on us
+//     //
+//     // NOTE: if a user did get a refund from changing plans,
+//     //       then their plan set at will change, so that takes care of that
+//     //
+//     const payments = await Payments.find({
+//       user: user._id,
+//       invoice_at: {
+//         $gte: new Date(user[config.userFields.planSetAt])
+//       },
+//       // Payments must match the user's current plan
+//       plan: user.plan
+//     })
+//       .sort('invoice_at')
+//       .lean()
+//       .exec();
 
-    //
-    // set the new expiry
-    //
-    // NOTE: we can't do `_.sumBy` because people pay by the month, not by the # of days in a month (e.g. 30d)
-    //
-    user[config.userFields.planExpiresAt] = new Date(
-      user[config.userFields.planSetAt]
-    );
-    for (const payment of payments) {
-      //
-      // payments cannot be counted for credit that were
-      // disputed/refunded on stripe or paypal (excluding beta and plan conversions)
-      // (except for ones which we've manually adjusted or grandfathered in)
-      //
-      if (
-        !payment.is_refund_credit_allowed &&
-        payment.amount_refunded > 0 &&
-        !['free_beta_program', 'plan_conversion'].includes(payment.method)
-      ) {
-        continue;
-      }
+//     //
+//     // set the new expiry
+//     //
+//     // NOTE: we can't do `_.sumBy` because people pay by the month, not by the # of days in a month (e.g. 30d)
+//     //
+//     user[config.userFields.planExpiresAt] = new Date(
+//       user[config.userFields.planSetAt]
+//     );
+//     for (const payment of payments) {
+//       //
+//       // payments cannot be counted for credit that were
+//       // disputed/refunded on stripe or paypal (excluding beta and plan conversions)
+//       // (except for ones which we've manually adjusted or grandfathered in)
+//       //
+//       if (
+//         !payment.is_refund_credit_allowed &&
+//         payment.amount_refunded > 0 &&
+//         !['free_beta_program', 'plan_conversion'].includes(payment.method)
+//       ) {
+//         continue;
+//       }
 
-      user[config.userFields.planExpiresAt] = dayjs(
-        user[config.userFields.planExpiresAt]
-      )
-        .add(...config.durationMapping[payment.duration.toString()])
-        .toDate();
-    }
+//       user[config.userFields.planExpiresAt] = dayjs(
+//         user[config.userFields.planExpiresAt]
+//       )
+//         .add(...config.durationMapping[payment.duration.toString()])
+//         .toDate();
+//     }
 
-    // If the new expiry is in the future then reset the API past due sent at reminder
-    // and also reset all billing reminders that have been sent
-    if (
-      new Date(user[config.userFields.planExpiresAt]).getTime() >= Date.now()
-    ) {
-      user[config.userFields.apiPastDueSentAt] = undefined;
-      user[config.userFields.apiRestrictedSentAt] = undefined;
-      // Only reset the reminders if it is past the reminder period
-      // NOTE: if you change this then also update `jobs/billing.js`
-      if (
-        new Date(user[config.userFields.planExpiresAt]).getTime() >=
-        dayjs().add(1, 'month').toDate().getTime()
-      ) {
-        user[config.userFields.paymentReminderInitialSentAt] = undefined;
-        user[config.userFields.paymentReminderFollowUpSentAt] = undefined;
-        user[config.userFields.paymentReminderFinalNoticeSentAt] = undefined;
-        user[config.userFields.paymentReminderTerminationNoticeSentAt] =
-          undefined;
-      }
-    }
+//     // If the new expiry is in the future then reset the API past due sent at reminder
+//     // and also reset all billing reminders that have been sent
+//     if (
+//       new Date(user[config.userFields.planExpiresAt]).getTime() >= Date.now()
+//     ) {
+//       user[config.userFields.apiPastDueSentAt] = undefined;
+//       user[config.userFields.apiRestrictedSentAt] = undefined;
+//       // Only reset the reminders if it is past the reminder period
+//       // NOTE: if you change this then also update `jobs/billing.js`
+//       if (
+//         new Date(user[config.userFields.planExpiresAt]).getTime() >=
+//         dayjs().add(1, 'month').toDate().getTime()
+//       ) {
+//         user[config.userFields.paymentReminderInitialSentAt] = undefined;
+//         user[config.userFields.paymentReminderFollowUpSentAt] = undefined;
+//         user[config.userFields.paymentReminderFinalNoticeSentAt] = undefined;
+//         user[config.userFields.paymentReminderTerminationNoticeSentAt] =
+//           undefined;
+//       }
+//     }
 
-    next();
-  } catch (err) {
-    next(err);
-  }
-});
+//     next();
+//   } catch (err) {
+//     next(err);
+//   }
+// });
 
 // Sanitize input (striptags)
 Users.pre('validate', function (next) {
@@ -653,13 +653,13 @@ Users.virtual(config.userFields.addressHTML).get(function () {
   });
 });
 
-Users.virtual(config.userFields.verificationPinHasExpired).get(function () {
-  return boolean(
-    !this[config.userFields.verificationPinExpiresAt] ||
-      new Date(this[config.userFields.verificationPinExpiresAt]).getTime() <
-        Date.now()
-  );
-});
+// Users.virtual(config.userFields.verificationPinHasExpired).get(function () {
+//   return boolean(
+//     !this[config.userFields.verificationPinExpiresAt] ||
+//       new Date(this[config.userFields.verificationPinExpiresAt]).getTime() <
+//         Date.now()
+//   );
+// });
 
 //
 // TODO: this should be moved to redis or its own package under forwardemail or @ladjs
