@@ -3,6 +3,7 @@
 
 ---
 - hosts: imap:pop3:smtp:http:bree:sqlite:mx1:mx2
+  connection: local
   name: Security
   become: true
   become_user: root
@@ -11,7 +12,7 @@
   handlers:
     - name: Restart SSH
       service:
-        name: ssh
+        name: sshd
         state: restarted
   tasks:
     - name: Insert/Update disable core dumps
@@ -89,12 +90,12 @@
 
     # Disable Apport Service
     # https://docs.datadoghq.com/security/default_rules/xccdf-org-ssgproject-content-rule-service-apport-disabled/#ansible-playbook
-    - name: Disable service apport
-      systemd:
-        name: apport.service
-        enabled: 'no'
-        state: stopped
-        masked: 'yes'
+    # - name: Disable service apport
+    #   systemd:
+    #     name: apport.service
+    #     enabled: 'no'
+    #     state: stopped
+    #     masked: 'yes'
     # NOTE: this does not seem necessary since apport.socket does not exist
     #- name: Disable socket apport
     #  systemd:
@@ -110,12 +111,12 @@
             create: false
             line: enabled=1
             state: absent
-        - name: Insert correct line to /etc/default/apport
-          lineinfile:
-            path: /etc/default/apport
-            create: false
-            line: enabled=0
-            state: present
+        # - name: Insert correct line to /etc/default/apport
+        #   lineinfile:
+        #     path: /etc/default/apport
+        #     create: false
+        #     line: enabled=0
+        #     state: present
 
     #
     # Disable coredump backtraces
@@ -148,32 +149,32 @@
             state: present
 
     # update deps
-    - name: Update apt
-      apt:
-        update_cache: true
+    # - name: Update apt
+    #   apt:
+    #     update_cache: true
 
     # upgrade deps
-    - name: Upgrade deps
-      apt:
-        upgrade: safe
-        update_cache: true
+    # - name: Upgrade deps
+    #   apt:
+    #     upgrade: safe
+    #     update_cache: true
 
     # install deps
-    - name: Install deps
-      apt:
-        name:
-          - build-essential
-          - curl
-          - git
-          - vim
-          - wget
-          - libtool
-          - automake
-          - autoconf
-          - nasm
-          - ripgrep
-          - redis-tools
-        update_cache: true
+    # - name: Install deps
+    #   apt:
+    #     name:
+    #       - build-essential
+    #       - curl
+    #       - git
+    #       - vim
+    #       - wget
+    #       - libtool
+    #       - automake
+    #       - autoconf
+    #       - nasm
+    #       - ripgrep
+    #       - redis-tools
+    #     update_cache: true
 
     # create devops group
     - name: Create devops group
@@ -273,22 +274,24 @@
       become_user: deploy
       shell: git config --global --add safe.directory '*'
 
-- hosts: imap:pop3:smtp:http:bree:sqlite:mx1:mx2
-  name: Mongo Shell
-  become: true
-  become_user: root
-  tasks:
-    - name: Setup keys
-      shell: |
-        wget -qO - https://www.mongodb.org/static/pgp/server-6.0.asc | sudo apt-key add -
-        echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu $(lsb_release -c -s)/mongodb-org/6.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-6.0.list
-    - name: Install package
-      apt:
-        name:
-          - mongodb-mongosh
-        update_cache: true
+# - hosts: imap:pop3:smtp:http:bree:sqlite:mx1:mx2
+#   connection: local
+#   name: Mongo Shell
+#   become: true
+#   become_user: root
+#   tasks:
+#     - name: Setup keys
+#       shell: |
+#         sudo rpm --import https://www.mongodb.org/static/pgp/server-6.0.asc
+#         echo "[mongodb-org-6.0] name=MongoDB Repository baseurl=https://repo.mongodb.org/yum/redhat/$releasever/mongodb-org/6.0/x86_64/ gpgcheck=1 enabled=1 gpgkey=https://www.mongodb.org/static/pgp/server-6.0.asc" | sudo tee /etc/yum.repos.d/mongodb-org-6.0.repo
+#     - name: Install package
+#       yum:
+#         name:
+#           - mongodb-org
+#         update_cache: true
 
 - hosts: imap:pop3:smtp:http:bree:sqlite:mx1:mx2
+  connection: local
   name: Sysctl
   become: true
   become_user: root
