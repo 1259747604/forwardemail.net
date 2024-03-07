@@ -4,6 +4,7 @@
 ---
 - hosts: localhost
   name: Ecosystem
+  connection: local
   tasks:
     #
     # https://stackoverflow.com/a/24959173
