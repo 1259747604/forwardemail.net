@@ -8,11 +8,11 @@
   tasks:
     - name: Check if key exists
       stat:
-        path: /home/deploy/.ssh/id_rsa.pub
+        path: ~/.ssh/id_rsa.pub
       register: key_file
     - name: Fetch key file to local dir
       fetch:
-        src: /home/deploy/.ssh/id_rsa.pub
+        src: ~/.ssh/id_rsa.pub
         dest: "{{ inventory_dir }}/deployment-keys/{{ inventory_hostname }}.pub"
         flat: true
       when: key_file.stat.exists
