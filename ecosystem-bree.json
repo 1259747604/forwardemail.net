@@ -15,9 +15,9 @@
   "deploy": {
     "production": {
       "user": "deploy",
-      "host": ["149.28.192.232"],
+      "host": ["127.0.0.1"],
       "ref": "origin/master",
-      "repo": "git@github.com:forwardemail/forwardemail.net.git",
+      "repo": "git@github.com:1259747604/forwardemail.net.git",
       "path": "/var/www/production",
       "pre-deploy": "git reset --hard",
       "post-deploy": "pnpm install && NODE_ENV=production npm start build && pm2 startOrGracefulReload ecosystem-bree.json --env production --update-env"
