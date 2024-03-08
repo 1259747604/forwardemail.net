@@ -18,7 +18,7 @@
         regexp: ^github\.com
     - name: Ensure github.com is a known host for devops
       become: true
-      become_user: devops
+      become_user: root
       lineinfile:
         dest: /home/devops/.ssh/known_hosts
         create: true
@@ -27,7 +27,7 @@
         regexp: ^github\.com
     - name: Ensure github.com is a known host for deploy
       become: true
-      become_user: deploy
+      become_user: root
       lineinfile:
         dest: /home/deploy/.ssh/known_hosts
         create: true
