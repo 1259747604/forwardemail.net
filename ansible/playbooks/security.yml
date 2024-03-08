@@ -271,7 +271,7 @@
     # Silence dubious ownership git warning
     - name: Silence git safe dir warning
       become: true
-      become_user: root
+      become_user: deploy
       shell: git config --global --add safe.directory '*'
 
 # - hosts: imap:pop3:smtp:http:bree:sqlite:mx1:mx2
