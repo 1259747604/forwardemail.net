@@ -67,7 +67,6 @@ yarn.lock
 *-zh.md
 *-ZH.md
 !ansible/playbooks/templates/hosts.yml
-deployment-keys
 *.csr
 *.key
 *.ca-bundle
