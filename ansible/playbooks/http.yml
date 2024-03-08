@@ -2,8 +2,8 @@
 # SPDX-License-Identifier: BUSL-1.1
 
 ---
-- name: Import security playbook
-  import_playbook: security.yml
+# - name: Import security playbook
+#   import_playbook: security.yml
 - name: Import Node.js playbook
   import_playbook: node.yml
 - name: Import SSH keys playbook
