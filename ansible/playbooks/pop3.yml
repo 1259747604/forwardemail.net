@@ -6,8 +6,8 @@
 #   import_playbook: security.yml
 # - name: Import Node.js playbook
 #   import_playbook: node.yml
-# - name: Import SSH keys playbook
-#   import_playbook: ssh-keys.yml
+- name: Import SSH keys playbook
+  import_playbook: ssh-keys.yml
 
 - hosts: pop3
   connection: local
