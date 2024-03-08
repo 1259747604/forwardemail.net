@@ -28,8 +28,8 @@
   ],
   "deploy": {
     "production": {
-      "user": "deploy",
-      "host": ["127.0.0.1", "127.0.0.1"],
+      "user": "root",
+      "host": ["127.0.0.1"],
       "ref": "origin/master",
       "repo": "git@github.com:1259747604/forwardemail.net.git",
       "path": "/var/www/production",
