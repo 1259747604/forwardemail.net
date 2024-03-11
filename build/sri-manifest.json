@@ -1,0 +1,746 @@
+{
+  "css/app-bot.css": {
+    "path": "css/app-bot.eed90800.css",
+    "integrity": "sha256-Q1sFJ0yCEnems272Q8+UlJchXiOPGbIvPT9Cifcr5J8="
+  },
+  "css/app-dark.css": {
+    "path": "css/app-dark.1f68fcf6.css",
+    "integrity": "sha256-bHiGYP8rZOk2QB8PxoH3kGZVD4vLphWIHaE6JkXx2g8="
+  },
+  "css/app-email.css": {
+    "path": "css/app-email.35edae86.css",
+    "integrity": "sha256-5nMogFWZVPe0nn2w0yAymSWfvxIBepc/jvmSd3oj7r0="
+  },
+  "css/app-light.css": {
+    "path": "css/app-light.1c414a2a.css",
+    "integrity": "sha256-8dfQCWbrEKOVXD0XgQ166eEfGa4OivwrmVW+k9q9UvU="
+  },
+  "css/app.css": {
+    "path": "css/app.d0ade1f2.css",
+    "integrity": "sha256-v8lpZTw7+cUuM7oAfD1PrSxjRJrDfUaDpwh4z2BeZrk="
+  },
+  "css/bootstrap-table-sticky-header.css": {
+    "path": "css/bootstrap-table-sticky-header.07d65e75.css",
+    "integrity": "sha256-j0HLwnqKpwxyttEfpM0PEPwpHpoSO+xJ5nU0ifMNVz0="
+  },
+  "css/bootstrap-table.css": {
+    "path": "css/bootstrap-table.c00e2e30.css",
+    "integrity": "sha256-Lu4F3ieOqdEues4OaX/aU76xr8xGT9mhQxfNUXoZxTU="
+  },
+  "css/codemirror.css": {
+    "path": "css/codemirror.6c0b2c80.css",
+    "integrity": "sha256-7jHKZyP/jOmGA1vjAs+thE+DXlZ2r7YZqi9GVfM1Ieo="
+  },
+  "css/freddy.css": {
+    "path": "css/freddy.c7b39253.css",
+    "integrity": "sha256-yWoEMNuXVaVx4OFNtXyUL0bGDcFBZ65jRUVB953DV6E="
+  },
+  "js/advanced-settings.js": {
+    "path": "js/advanced-settings.a61b651c.js",
+    "integrity": "sha256-TaQiwkPQDClUX/A7b0XVyileyI4y11gq7fCdnlw3cVQ="
+  },
+  "js/billing.js": {
+    "path": "js/billing.c125955e.js",
+    "integrity": "sha256-26htCbEC7+78KgG8HfA8ndjEKJTUzx2DjkrfFXrBoFc="
+  },
+  "js/bootstrap-table-sticky-header.js": {
+    "path": "js/bootstrap-table-sticky-header.2a613aba.js",
+    "integrity": "sha256-eAilGqZA+8Zo5r1yWFggJ1nvrEGRFCGgjbB25RpiuyM="
+  },
+  "js/bootstrap-table.js": {
+    "path": "js/bootstrap-table.cd227fea.js",
+    "integrity": "sha256-cssac5BVBi0iIqmbC9JksMa3dWAsZebCvUdxA1QZQNM="
+  },
+  "js/build.js": {
+    "path": "js/build.617bf390.js",
+    "integrity": "sha256-Ntvq2y/zaYuNPMX9ffISS+1fhFQAaZ5WpQhPdgcFPD0="
+  },
+  "js/confetti.js": {
+    "path": "js/confetti.3e5d4729.js",
+    "integrity": "sha256-Wrd8us7X9zigxrI3MHlO0jLJBuQQnmal0Q1Pr3ftXVQ="
+  },
+  "js/core.js": {
+    "path": "js/core.baba7fdf.js",
+    "integrity": "sha256-H9RczZR+wCZRUhKdgo77puOpBFbikHmVJwcWRC55Bdg="
+  },
+  "js/debounce.js": {
+    "path": "js/debounce.864d89d8.js",
+    "integrity": "sha256-si/HJVyCOTlw9h9PnTu4mz2n/VRbJzVfJkZfy8MCCFk="
+  },
+  "js/ekko-lightbox.js": {
+    "path": "js/ekko-lightbox.a4b97ca8.js",
+    "integrity": "sha256-Br8PwALsjqPG+fetbWMjsnr9pqinvAcp+wbiouzkN30="
+  },
+  "js/factor-bundle.js": {
+    "path": "js/factor-bundle.cfc28c1b.js",
+    "integrity": "sha256-3Cd/yg09Zo1B+joYsiuxEf8fmKqcZkkY3fgk1GfIMZo="
+  },
+  "js/lazyload.js": {
+    "path": "js/lazyload.ab77c82b.js",
+    "integrity": "sha256-cXPUXsELTYYs3t1JOElvVw4bbyLCnsriUFIyYRE671w="
+  },
+  "js/logger.js": {
+    "path": "js/logger.6935266e.js",
+    "integrity": "sha256-5oAUFXZZwGm5s6x5UEi6e3AURCMmueSS0G9huO0DlRY="
+  },
+  "js/open-startup.js": {
+    "path": "js/open-startup.0e4e2254.js",
+    "integrity": "sha256-V+7uoHQXFRwbAgQiTqI5VzDJcxmHPow6WI4tnOyTeJA="
+  },
+  "js/polyfill.js": {
+    "path": "js/polyfill.0866cf89.js",
+    "integrity": "sha256-LA5zCGlM88nkr9WRvUJYUpeRnvHp9Rfg5BpqsjtjHbM="
+  },
+  "js/send-request.js": {
+    "path": "js/send-request.9a8d9c17.js",
+    "integrity": "sha256-kKj1TZI9CS82OFN3xuH44pSL0WljtwOcaGtCjq78EQ8="
+  },
+  "js/uncaught.js": {
+    "path": "js/uncaught.80ab15d1.js",
+    "integrity": "sha256-lehdb2B5Ge400Mc2zOyHhzH+o7SEcsJxnaK2/TunwHE="
+  },
+  "img/alternatives/123-reg.webp": {
+    "path": "img/alternatives/123-reg-44f65d4fbf.webp",
+    "integrity": "sha256-2G3AF9madwGlfopyzz8XQlgRXDREn9Gm7JfdnmS3nz4="
+  },
+  "img/alternatives/activecampaign.webp": {
+    "path": "img/alternatives/activecampaign-9b061afde3.webp",
+    "integrity": "sha256-AWx+YxPw+622Wv1a0vxWATGWupjmJcPCjz0GFZiSERk="
+  },
+  "img/alternatives/addy-io.webp": {
+    "path": "img/alternatives/addy-io-84362ab8ce.webp",
+    "integrity": "sha256-tYTCztRK1LjbOnosjqfcLi0hOFKtZ9BGKeASbRA81Ow="
+  },
+  "img/alternatives/amazon-simple-email-service-ses.webp": {
+    "path": "img/alternatives/amazon-simple-email-service-ses-388395c071.webp",
+    "integrity": "sha256-XQUOaKAcxSjJh2bK8MKjjMTQMIChs7dleXzZpRP5v3E="
+  },
+  "img/alternatives/amazon-workmail.webp": {
+    "path": "img/alternatives/amazon-workmail-4ed4a6e53f.webp",
+    "integrity": "sha256-PeN5DeS+Rb0Y0V5TLncV1soQCI5PUKdpfc9jtag5Hoc="
+  },
+  "img/alternatives/aol.webp": {
+    "path": "img/alternatives/aol-30f6867b21.webp",
+    "integrity": "sha256-9RXQQwiaHN0CwuqtHji6Cwo8jRZ002tn1eqznUJdq3A="
+  },
+  "img/alternatives/apple-mail-icloud.webp": {
+    "path": "img/alternatives/apple-mail-icloud-f4e9cca4c9.webp",
+    "integrity": "sha256-hf6zePkVIGOydNVJ/R5DqSnsEFD3+LUf1mIoKsJzpKA="
+  },
+  "img/alternatives/at-and-t.webp": {
+    "path": "img/alternatives/at-and-t-b07448c729.webp",
+    "integrity": "sha256-5X0Z5BvRM1HJ9ZLoubeSowsvSqCU7UEUijO87VoqUBU="
+  },
+  "img/alternatives/brevo.webp": {
+    "path": "img/alternatives/brevo-59d50a4c6b.webp",
+    "integrity": "sha256-hPOXrDg9EshRKqfsgkKF+SXkqIiqurkV1KB+QjvtOXo="
+  },
+  "img/alternatives/cloudflare-email-routing.webp": {
+    "path": "img/alternatives/cloudflare-email-routing-ce6c25866d.webp",
+    "integrity": "sha256-nD7SzdH1LKtwVaOQf8ttvkfShToMQ/YDoPsRbkgQP0c="
+  },
+  "img/alternatives/crisp-chat.webp": {
+    "path": "img/alternatives/crisp-chat-d35670d5cd.webp",
+    "integrity": "sha256-e63p9geGSA+k4w3GFhg/0uHkPJhqjwIxArWbtKPU+Qg="
+  },
+  "img/alternatives/customer-io.webp": {
+    "path": "img/alternatives/customer-io-7556f7ac57.webp",
+    "integrity": "sha256-rSt/xWPduAwotZk4WMYz4ELoRTW7BkXHGPb7r8gR1hI="
+  },
+  "img/alternatives/drift-chat.webp": {
+    "path": "img/alternatives/drift-chat-be77a4eb2a.webp",
+    "integrity": "sha256-IYJCeDsSDtJV02Judkwlpd44EQy/Y2S/eYT7SG0o+E8="
+  },
+  "img/alternatives/elastic-email.webp": {
+    "path": "img/alternatives/elastic-email-050e14b7c4.webp",
+    "integrity": "sha256-Qzw4UK4zu5nXw+9nBXipm2rNdBA1h20qiopxvugGmSA="
+  },
+  "img/alternatives/fastmail.webp": {
+    "path": "img/alternatives/fastmail-b43cd8b32e.webp",
+    "integrity": "sha256-CepHwNTa96vvS3+hL6M0/9WuOi0UpLkoGFlBwtZDiWo="
+  },
+  "img/alternatives/forward-email.webp": {
+    "path": "img/alternatives/forward-email-646810ada2.webp",
+    "integrity": "sha256-0cSO+S+MqF6hewcN7kpYduXESbmnPvHde4NZmdS08cQ="
+  },
+  "img/alternatives/gandi.webp": {
+    "path": "img/alternatives/gandi-1bcd6784e7.webp",
+    "integrity": "sha256-vJxupH2Hwtt9LFx0HKziccKMmeUOKPOI+qJgCznmJfU="
+  },
+  "img/alternatives/get-response.webp": {
+    "path": "img/alternatives/get-response-cc4d24968b.webp",
+    "integrity": "sha256-uquLM/b9G5KZK8RPmblloC/pAziV3G9tghqDdfr3uts="
+  },
+  "img/alternatives/gmail.webp": {
+    "path": "img/alternatives/gmail-05e7e7a197.webp",
+    "integrity": "sha256-kLfKRsnYHlHZSz4FFhGJ2u5ZEMrJZQgslYp3Xq3OyPM="
+  },
+  "img/alternatives/gmx.webp": {
+    "path": "img/alternatives/gmx-5ac111a8c4.webp",
+    "integrity": "sha256-Vymjj2rU5U+/oXAW1xAARHfxF5S70FChjPSQa6Q6XZw="
+  },
+  "img/alternatives/godaddy.webp": {
+    "path": "img/alternatives/godaddy-12e02dde32.webp",
+    "integrity": "sha256-JyOJ7CEVEcF5sbgnqfrrVVv7F/qxt9WjTj3nHBe6Qxo="
+  },
+  "img/alternatives/help-scout.webp": {
+    "path": "img/alternatives/help-scout-6d30e2bb70.webp",
+    "integrity": "sha256-cVrW/X+y0rqCOinnVaetOqK3XqC75pgQ4OVGYOUscaY="
+  },
+  "img/alternatives/helpcrunch.webp": {
+    "path": "img/alternatives/helpcrunch-17d41fb920.webp",
+    "integrity": "sha256-1jU3S2Q+FasAAz7kKG9yKmDHUx6bCriccGKZBcTZD+I="
+  },
+  "img/alternatives/hey.webp": {
+    "path": "img/alternatives/hey-5e0f2f37dc.webp",
+    "integrity": "sha256-Oaj3k90jkxOHw4mJxSqFPt19lwPWFqIK6OTT1W9bYHA="
+  },
+  "img/alternatives/hubspot.webp": {
+    "path": "img/alternatives/hubspot-edc6d0be4d.webp",
+    "integrity": "sha256-uFDBFj1V0q59x4sHAdMEsJuMBkk+PxjIkvEjOKl8mAs="
+  },
+  "img/alternatives/improvmx.webp": {
+    "path": "img/alternatives/improvmx-26da424ccb.webp",
+    "integrity": "sha256-N0aKFWs+lD0a4Es6yDzu0Ul4qmorfY3g2Al9BZZvalM="
+  },
+  "img/alternatives/intercom.webp": {
+    "path": "img/alternatives/intercom-382ad0fafb.webp",
+    "integrity": "sha256-Nap3rBV+/4d1UFoVBh8qBMao66lK4tcZBE9tKlaaiE4="
+  },
+  "img/alternatives/klaviyo.webp": {
+    "path": "img/alternatives/klaviyo-3db0184ee9.webp",
+    "integrity": "sha256-8AdzUBdYy3LDIA5CDxOQADxP/j4qVcgpAcofRGin8tU="
+  },
+  "img/alternatives/mail-com.webp": {
+    "path": "img/alternatives/mail-com-a1f8f664d2.webp",
+    "integrity": "sha256-wzq0JJDrx5FTdMbau6G2TuV40G9YsuRuqDk7VYk9Em0="
+  },
+  "img/alternatives/mailbox-org.webp": {
+    "path": "img/alternatives/mailbox-org-e9e77c0be6.webp",
+    "integrity": "sha256-VMX9OujJ3lM4+3biQAQrfk7EEAf++I2NkDSgyyZKF2M="
+  },
+  "img/alternatives/mailchimp.webp": {
+    "path": "img/alternatives/mailchimp-5919c2370f.webp",
+    "integrity": "sha256-looiAhHg0s5C/VraPMSJfN+sjEzJjHbr+uttJdhgtdQ="
+  },
+  "img/alternatives/mailersend.webp": {
+    "path": "img/alternatives/mailersend-8dc0501ee5.webp",
+    "integrity": "sha256-wqsawUelqxTQ77rKi8xAJ6n4y/znrFn1HJYqB6adJds="
+  },
+  "img/alternatives/mailfence.webp": {
+    "path": "img/alternatives/mailfence-32d83c1750.webp",
+    "integrity": "sha256-S15huxFmeteOZNQ7YJgcIwxgoulyitqwlnvXUt/mAgs="
+  },
+  "img/alternatives/mailgun.webp": {
+    "path": "img/alternatives/mailgun-92c3a3e036.webp",
+    "integrity": "sha256-jfy+djYX6npihpd0LhrbFuGWV35mdROtVsd5Z8HXvi8="
+  },
+  "img/alternatives/mailjet.webp": {
+    "path": "img/alternatives/mailjet-05aca676b0.webp",
+    "integrity": "sha256-0VYG4yDVayW8jFAHaAatZNAs0p9Y4Q9JZLfq+vAl/do="
+  },
+  "img/alternatives/mailtrap.webp": {
+    "path": "img/alternatives/mailtrap-bbea0c7b28.webp",
+    "integrity": "sha256-fQM+lcWU5LYPRnY1Q8faJtzKQ44q6ilFXcdPFzYUq5o="
+  },
+  "img/alternatives/mandrill.webp": {
+    "path": "img/alternatives/mandrill-b7afb70950.webp",
+    "integrity": "sha256-DogE6lBl+aVTSO5TvvVI7QKSd1EeGfdxi0jsp+uF80A="
+  },
+  "img/alternatives/messagebird.webp": {
+    "path": "img/alternatives/messagebird-02fe9484ad.webp",
+    "integrity": "sha256-/+n6oCUrVc11RSBdP2TCj6FXubFOAwdwjjEJ/cWZTdE="
+  },
+  "img/alternatives/microsoft-365.webp": {
+    "path": "img/alternatives/microsoft-365-39dc5c1a28.webp",
+    "integrity": "sha256-N9l0qHknXfDSnwODuHQZgYrfem5nUkPGatvJ8lERrSo="
+  },
+  "img/alternatives/namecheap.webp": {
+    "path": "img/alternatives/namecheap-510899fd8d.webp",
+    "integrity": "sha256-LdBc+iz5VtWk1MnzQSfn0T/PtZHDeqzGRTS3Okkr4nY="
+  },
+  "img/alternatives/olark.webp": {
+    "path": "img/alternatives/olark-62e9a8c587.webp",
+    "integrity": "sha256-a4RZQFtpS1jhEnHmkmeWZgeOW3RhosULPmi3MGmTlWQ="
+  },
+  "img/alternatives/pobox.webp": {
+    "path": "img/alternatives/pobox-bf6de4e973.webp",
+    "integrity": "sha256-+sOqZIiidmx6JcJ9uuPpMYBZQemeu2Pbx7oEHqkTJa0="
+  },
+  "img/alternatives/postmark.webp": {
+    "path": "img/alternatives/postmark-5adbabdf7e.webp",
+    "integrity": "sha256-hfO8gsMFCT7pQnnQkIlpINyPbNVGePIvev3iMCS1b2w="
+  },
+  "img/alternatives/proton-mail.webp": {
+    "path": "img/alternatives/proton-mail-c5eab9f7a8.webp",
+    "integrity": "sha256-t89g0xApbg2dVxhIw87pA193S0ZruXUf2MNhu7UBjOs="
+  },
+  "img/alternatives/resend.webp": {
+    "path": "img/alternatives/resend-605078fa30.webp",
+    "integrity": "sha256-iY9zomelUyi1R2fwcChBH6FjTbyIXI3BgXVFE5LHdiU="
+  },
+  "img/alternatives/sendgrid.webp": {
+    "path": "img/alternatives/sendgrid-7fa2ccc066.webp",
+    "integrity": "sha256-nMyANmAkjNkr8IWKHmk4rEQ76W+8lp7eVEfvBprqiBs="
+  },
+  "img/alternatives/simplelogin.webp": {
+    "path": "img/alternatives/simplelogin-3ccc7e4ca2.webp",
+    "integrity": "sha256-fblTGNkCngokymFHbBdLGYGL6KdSsUj2+aucct5rDUQ="
+  },
+  "img/alternatives/skiff.webp": {
+    "path": "img/alternatives/skiff-efabf8e68c.webp",
+    "integrity": "sha256-qrvnft1OYX5YxUKVefnBr721868gAX7OCnPY1FAWhUg="
+  },
+  "img/alternatives/smtp-com.webp": {
+    "path": "img/alternatives/smtp-com-fb5a13e0f7.webp",
+    "integrity": "sha256-IhPW6dqVGWEoUVx/bt40QTesC/UZS9LxxokNt6TWhsE="
+  },
+  "img/alternatives/smtp2go.webp": {
+    "path": "img/alternatives/smtp2go-6b3072e61f.webp",
+    "integrity": "sha256-cvUvH0aheKzjWT8aL/IZslSYPAOryFDR/aLiaFi10TE="
+  },
+  "img/alternatives/startmail.webp": {
+    "path": "img/alternatives/startmail-3ffdf1b536.webp",
+    "integrity": "sha256-Ol8ZaLdkw4a8MRGKB2mrnIgrOlKaxkMNhvFitWolMXM="
+  },
+  "img/alternatives/titan.webp": {
+    "path": "img/alternatives/titan-81b69e7223.webp",
+    "integrity": "sha256-8KzBrorjESi+VGYOYG2hP5EKWFf+aKBdSXIvl/v9kbE="
+  },
+  "img/alternatives/tutanota.webp": {
+    "path": "img/alternatives/tutanota-8dea959481.webp",
+    "integrity": "sha256-d7QewN2/FcHZ0xO1aSjWA8oMo40Sl+n8YpOYPgsNKaM="
+  },
+  "img/alternatives/yahoo.webp": {
+    "path": "img/alternatives/yahoo-5d62ececaa.webp",
+    "integrity": "sha256-de9FKKaYiBOh5NQ1HJ/WDgMtyP6whfP2OJucfj/XC/8="
+  },
+  "img/alternatives/yandex.webp": {
+    "path": "img/alternatives/yandex-753c7a7c0e.webp",
+    "integrity": "sha256-dkijCJ5eW2m4y6lQpx4Yw3KmEcdaFqezInHmA1GxBFU="
+  },
+  "img/alternatives/zendesk.webp": {
+    "path": "img/alternatives/zendesk-57ca476d94.webp",
+    "integrity": "sha256-WgQhv/DPcNy+t+eyEKta2U1HgV441CTDshyPGDnQcxE="
+  },
+  "img/alternatives/zoho.webp": {
+    "path": "img/alternatives/zoho-d7fd563019.webp",
+    "integrity": "sha256-o+Q+FmW5gy6uHWKQD6OzLa6mHyZASWr2V5XzNJrN1oA="
+  },
+  "img/android-chrome-192x192.png": {
+    "path": "img/android-chrome-192x192-cbac39b57f.png",
+    "integrity": "sha256-3N/X8UIsWX/OJKTIGUWeMJey1x3twy0BM9Nvvp8pojg="
+  },
+  "img/android-chrome-512x512.png": {
+    "path": "img/android-chrome-512x512-7474f38e39.png",
+    "integrity": "sha256-732Q+G8OasWvRnsz5ouuDOYjrpRRpQcEqBVKtgxJkfw="
+  },
+  "img/apple-logo.svg": {
+    "path": "img/apple-logo-57a4cdb133.svg",
+    "integrity": "sha256-wZVmQtSKaNAUQdSD6ie5mBdfRuAu03bfPEIpSi1GBGg="
+  },
+  "img/apple-touch-icon.png": {
+    "path": "img/apple-touch-icon-08d0fb9d71.png",
+    "integrity": "sha256-JllWT66gO4YxseJygIU9WMUaaN/ha634vdVVBGuBIiM="
+  },
+  "img/art/freddy.gif": {
+    "path": "img/art/freddy-1ae540df06.gif",
+    "integrity": "sha256-sOC48YNVKHsW4XCtu+ZGf2Bvkfgx6Ql8e5sgHXAt5pY="
+  },
+  "img/art/glow.svg": {
+    "path": "img/art/glow-f587c9ef75.svg",
+    "integrity": "sha256-LNnGG3qmqi3bPn4dFmMgCnn6/GILFERDPhODdLxLCoI="
+  },
+  "img/art/group.svg": {
+    "path": "img/art/group-7d1b3c7b8a.svg",
+    "integrity": "sha256-zNVhxxfntndpoIjSSzzFf+yk4wBbzqTd04mpdkwl12w="
+  },
+  "img/art/planet.svg": {
+    "path": "img/art/planet-6eacf4a2c0.svg",
+    "integrity": "sha256-85xP1l5bAtlUFiIDbuwifm4GnI+ax5J5+t8uxtJajgw="
+  },
+  "img/art/postcard.svg": {
+    "path": "img/art/postcard-b342ce4b08.svg",
+    "integrity": "sha256-KoOOfGcpiyzlcQlUSu4E2slGIoPTCaC5WxyRNjIXur0="
+  },
+  "img/art/purple-stars.svg": {
+    "path": "img/art/purple-stars-7f4e24a9f6.svg",
+    "integrity": "sha256-yxwLn+f1kQD3Sf7jOTU5hJDCIxCsJkq5QKaJ73KX0+M="
+  },
+  "img/art/rocket.gif": {
+    "path": "img/art/rocket-4722c2d26b.gif",
+    "integrity": "sha256-bfur+dtJQlN5/0xeaC3cLw+SMWlEg5cwLWU5WmW834w="
+  },
+  "img/art/stars.svg": {
+    "path": "img/art/stars-9cca2c8b3f.svg",
+    "integrity": "sha256-tOAqc8M3c4VRIJi3w4fAqr1vLrqqmK51sqYbc6GpB2s="
+  },
+  "img/art/swingset.svg": {
+    "path": "img/art/swingset-c18ca33304.svg",
+    "integrity": "sha256-OfjeZ7Hm2V9f2/ExQfQa23uQILWvKDXPY3fJKbrWV1E="
+  },
+  "img/art/waving.svg": {
+    "path": "img/art/waving-5f4b0bf5c2.svg",
+    "integrity": "sha256-vcydBP8HTEk9n5WRa2lsboIgFKXgsfNM6T4gm3AtsAg="
+  },
+  "img/email-clients/aerc.png": {
+    "path": "img/email-clients/aerc-1d4ec8cf1d.png",
+    "integrity": "sha256-snvmyzUrdrN5tljOitJTX4X7r9DaQdf6icNPNI7r1I0="
+  },
+  "img/email-clients/alpine.png": {
+    "path": "img/email-clients/alpine-78d27dcbdf.png",
+    "integrity": "sha256-CJMg20aDBs+LTAyLG27ZSEG25Bpih/bTKrKiUQnNsg0="
+  },
+  "img/email-clients/apple-mail.png": {
+    "path": "img/email-clients/apple-mail-7bd91e6cb6.png",
+    "integrity": "sha256-XHRTaMdMeqXXeeUl8NoY5v4uU0Spm7dViuDrLL135Nw="
+  },
+  "img/email-clients/balsa.png": {
+    "path": "img/email-clients/balsa-e1c03bf82c.png",
+    "integrity": "sha256-7RKdov6n8gS8sU7675YAv5/1C5PohXB8C80sLLDed60="
+  },
+  "img/email-clients/claws-mail.png": {
+    "path": "img/email-clients/claws-mail-412af5fdc6.png",
+    "integrity": "sha256-F7ZK8T3ML/ugF1XzYt6HOOz8PuCCyvJbL6IAPV0EsQQ="
+  },
+  "img/email-clients/cypht.png": {
+    "path": "img/email-clients/cypht-61b4c4af67.png",
+    "integrity": "sha256-xV4s0WlTpAht3jpppqL/qX9Nskl2Jw0ynNpaKfpXQRU="
+  },
+  "img/email-clients/fairemail.png": {
+    "path": "img/email-clients/fairemail-8593816364.png",
+    "integrity": "sha256-w6vmMMbRzW9Pr6tuazyCyey2MAgKHw3SWHu8e5ptoxk="
+  },
+  "img/email-clients/geary.png": {
+    "path": "img/email-clients/geary-0a7ba5bb97.png",
+    "integrity": "sha256-sIJdPqh0yRZJidnUbVy+jIjjigw5yA+sTwWjdEF2chg="
+  },
+  "img/email-clients/gnome-evolution.png": {
+    "path": "img/email-clients/gnome-evolution-5e985ff70c.png",
+    "integrity": "sha256-MDbxOeA7djqYbP1eCZOniOoFh5cXh4bEfZULiXo11PQ="
+  },
+  "img/email-clients/gnumail.png": {
+    "path": "img/email-clients/gnumail-9eff3b62f7.png",
+    "integrity": "sha256-AxsL1fU7NNfRah/Ws4x4Ttg936M2e8FL7yFekyiRzAg="
+  },
+  "img/email-clients/himalaya.png": {
+    "path": "img/email-clients/himalaya-5b52cb288e.png",
+    "integrity": "sha256-5jkdLc/g8dfg4tKY14ZZQe7Jw6zcCbUSKdGD3+TZXls="
+  },
+  "img/email-clients/k-9-mail.png": {
+    "path": "img/email-clients/k-9-mail-af3ffc3898.png",
+    "integrity": "sha256-q/JMHHrClyrRnEDfJ/asHULpAiwZ0y9BbxNfqQ16GWU="
+  },
+  "img/email-clients/kmail-kontact.png": {
+    "path": "img/email-clients/kmail-kontact-6d3e71f419.png",
+    "integrity": "sha256-j27HUO5y1UAQEoHhpwOeJCJoQBsJy/l293K3oeyBTK4="
+  },
+  "img/email-clients/meli.webp": {
+    "path": "img/email-clients/meli-e00755ce0a.webp",
+    "integrity": "sha256-WImCbkHn/GT5Pf/9S6wfG4ktTdveD2GGLTfw0IL8v5Y="
+  },
+  "img/email-clients/neomutt.png": {
+    "path": "img/email-clients/neomutt-002e7af43a.png",
+    "integrity": "sha256-pjm6IO6ISInQ8u8buo4A4cyu5Qg1l7hcOv5cPAJsMTE="
+  },
+  "img/email-clients/rainloop.png": {
+    "path": "img/email-clients/rainloop-1acf6ec672.png",
+    "integrity": "sha256-aEn1mrW9iN8pmhLy5yhMA1DN3u5p5IpJhNnQ58pWJG4="
+  },
+  "img/email-clients/roundcube.png": {
+    "path": "img/email-clients/roundcube-3160949fb6.png",
+    "integrity": "sha256-3sd9pB3dodnbXVaqNVxMpGzS8MUxEbljPbc+8hx3joM="
+  },
+  "img/email-clients/sylpheed.jpeg": {
+    "path": "img/email-clients/sylpheed-658b78a2eb.jpeg",
+    "integrity": "sha256-HPhuBqtqj8WaMQZHA4N7L8IVTIIFhBvO40oOTEQpSkQ="
+  },
+  "img/email-clients/thunderbird.png": {
+    "path": "img/email-clients/thunderbird-a74ed68f62.png",
+    "integrity": "sha256-+qTrFau7x9B0OasMBO9p58Hz8j6w6bQkf3WFCgibxbM="
+  },
+  "img/email-servers/chasquid.png": {
+    "path": "img/email-servers/chasquid-eaf37adcd8.png",
+    "integrity": "sha256-MrjCoyKTmf9ZHo34cc0CUR8dOjOJ2JORdWtzN0/GXmA="
+  },
+  "img/email-servers/docker-mailserver.png": {
+    "path": "img/email-servers/docker-mailserver-27e5126b42.png",
+    "integrity": "sha256-qWG2NrAAdGuw+8O+iYGioVAgUf42Els60+26EuqPjXQ="
+  },
+  "img/email-servers/dovecot.png": {
+    "path": "img/email-servers/dovecot-c664036b18.png",
+    "integrity": "sha256-uCtf0mvwUbHZiupTcfb9qdDkSDRGErleByM+LkAXslk="
+  },
+  "img/email-servers/exim.png": {
+    "path": "img/email-servers/exim-c285cf3822.png",
+    "integrity": "sha256-VZes3gQiO2ucrXuy4kgzPv/PSDnMAX+sbEm2/FvNNDM="
+  },
+  "img/email-servers/forward-email.png": {
+    "path": "img/email-servers/forward-email-69582812f9.png",
+    "integrity": "sha256-Qu+ypAz3bm9GX5T+8bIvCkOK9XCKfcfuqBb6UY7MRJo="
+  },
+  "img/email-servers/haraka.png": {
+    "path": "img/email-servers/haraka-de76316d62.png",
+    "integrity": "sha256-LN3qKcWNq4XuZsH6Lhbw2ElXTlaTYwuCLi/fKObhbKk="
+  },
+  "img/email-servers/keila.png": {
+    "path": "img/email-servers/keila-7247ef6b7c.png",
+    "integrity": "sha256-hJj9ks9h5vfHje931uPrC0Yh/JehHq5BnUFzhBK35qA="
+  },
+  "img/email-servers/listmonk.png": {
+    "path": "img/email-servers/listmonk-9b7093ca64.png",
+    "integrity": "sha256-4Pd+h5HhLjhT4MPMGaluYNP8KoAAyi28UuwQLPfvgzI="
+  },
+  "img/email-servers/maddy.png": {
+    "path": "img/email-servers/maddy-19cfe3d26a.png",
+    "integrity": "sha256-vWfFu53iWU4xbqB+uQ1nvMo1nQDS+e4zhKpDLgBPiT0="
+  },
+  "img/email-servers/mail-in-a-box.png": {
+    "path": "img/email-servers/mail-in-a-box-7054e4d9aa.png",
+    "integrity": "sha256-aPwPqy1HoVKaoig+gL0Lg0cxmKUwLfwwJ/50EytzGng="
+  },
+  "img/email-servers/mailcow.png": {
+    "path": "img/email-servers/mailcow-22359694ac.png",
+    "integrity": "sha256-h+4rZ+ieisO1iczl/jKO4utiMayPrrEmnUA8ozaa3Pc="
+  },
+  "img/email-servers/postal.png": {
+    "path": "img/email-servers/postal-908a97e0fe.png",
+    "integrity": "sha256-C+/2DkhCcsdMvsxnNhg5XDgQfcSWWK43jpwLTPJ0Xj4="
+  },
+  "img/email-servers/postfix.png": {
+    "path": "img/email-servers/postfix-26df78ea45.png",
+    "integrity": "sha256-mrVgZllDsMT1N2OqPREUnR2i/Yr6xCrqgruw66z3150="
+  },
+  "img/email-servers/wildduck.png": {
+    "path": "img/email-servers/wildduck-3466905025.png",
+    "integrity": "sha256-/u/meaNtDkZvrEDr/bdlA68iTnE0CEW/F7Dy7wqFtNc="
+  },
+  "img/email-servers/zone-mta.png": {
+    "path": "img/email-servers/zone-mta-09cbb34322.png",
+    "integrity": "sha256-4qv7c25xUSe4p7U8TvzLtxIirPn5LkR64zwo1vCPMKo="
+  },
+  "img/emails/domain-onboard.gif": {
+    "path": "img/emails/domain-onboard-44ed9f03a0.gif",
+    "integrity": "sha256-DrQT+mcoYRx7uIzPZd63zEV4V1rJfVwMUuFhz8Ww0is="
+  },
+  "img/emails/domain-verified.gif": {
+    "path": "img/emails/domain-verified-f56cf201c2.gif",
+    "integrity": "sha256-AnOhQfb8/gvIuIw967yvZR9VyVD3goRwyLMf47hG8w8="
+  },
+  "img/emails/self-test.gif": {
+    "path": "img/emails/self-test-dfdeee615b.gif",
+    "integrity": "sha256-2GdDGTsrummx+Nj+eRfHQ4QMuJ5MmixV9GGWloyKL9U="
+  },
+  "img/emails/welcome.gif": {
+    "path": "img/emails/welcome-691b9da96d.gif",
+    "integrity": "sha256-CuEWLCikpJ2bWpDJmfu9NiOy35+b74kAdycfxfI5JVI="
+  },
+  "img/fa-key.svg": {
+    "path": "img/fa-key-d848188652.svg",
+    "integrity": "sha256-El+FknsE5LYLeYQq2H+52h2LB2dMeoqWNpME7LGDRFg="
+  },
+  "img/favicon-16x16.png": {
+    "path": "img/favicon-16x16-0c832269dc.png",
+    "integrity": "sha256-YmFufCqR/7ABnekba+px4tiOinB10F8QNa+W0ZDDPZM="
+  },
+  "img/favicon-32x32.png": {
+    "path": "img/favicon-32x32-f773c963b0.png",
+    "integrity": "sha256-NRU01WC+MM07hR69+uUUcLnc/CUzcerRDYAYJoVUh8s="
+  },
+  "img/favicon.ico": {
+    "path": "img/favicon-de278f185d.ico",
+    "integrity": "sha256-QPuD6qqwo90it7Th5AL/9XBo8EXkFxcs2HIBfOmtl3g="
+  },
+  "img/github-logo-white.svg": {
+    "path": "img/github-logo-white-dcc3011c56.svg",
+    "integrity": "sha256-5VfnITyvsKczmZuxsjglk+c8zNxKABkSGnpwPUq7EjM="
+  },
+  "img/github-logo.svg": {
+    "path": "img/github-logo-006bf8b240.svg",
+    "integrity": "sha256-Bp689YjjQXvtk7mPNa8osLk7Q2auUxphV8CC/l4MDX0="
+  },
+  "img/google-logo.svg": {
+    "path": "img/google-logo-7ba8b3e0e4.svg",
+    "integrity": "sha256-UCOMbUc/jnjPLw7UlAtPwV5BxWPJ+CSKP7OHHw6GAmE="
+  },
+  "img/guides/cloudflare.gif": {
+    "path": "img/guides/cloudflare-555a0c0881.gif",
+    "integrity": "sha256-/9F0AKHvuFnGUG1I755lvSH0Uw9va+tE0kdjxXCzog4="
+  },
+  "img/guides/domains.com.gif": {
+    "path": "img/guides/domains-13a9f02589.com.gif",
+    "integrity": "sha256-qkNs+oJta/6y+Mxpr4eUyGFiC+rvvl0MSvijrhzeZuU="
+  },
+  "img/guides/gandi.gif": {
+    "path": "img/guides/gandi-8812b61644.gif",
+    "integrity": "sha256-drJiz+lb3mXiJqjMc7DRoRwaGlpdVneIn25H9/6jRzE="
+  },
+  "img/guides/godaddy.gif": {
+    "path": "img/guides/godaddy-ff78fa03e5.gif",
+    "integrity": "sha256-Z549yPiSjSGu5sNj+T82CKY47DdlHKTx0I+AtquGMFI="
+  },
+  "img/guides/google.gif": {
+    "path": "img/guides/google-d670ad66c1.gif",
+    "integrity": "sha256-BfJv5f/xloqqfib8wXxmXavrJ4B+6f/Gy59N9PJlDe4="
+  },
+  "img/guides/name.com.gif": {
+    "path": "img/guides/name-2436f3a4a3.com.gif",
+    "integrity": "sha256-uP53Z8WK80ckEJH4FSDWW7yYAzhj8LRUE6naGGtbdE4="
+  },
+  "img/guides/namecheap.gif": {
+    "path": "img/guides/namecheap-50445404d0.gif",
+    "integrity": "sha256-He1QYsSp/3841sBLbAd1+ABJ2u5jg1GpqtHMx2ZFh+g="
+  },
+  "img/guides/squarespace.gif": {
+    "path": "img/guides/squarespace-2239700782.gif",
+    "integrity": "sha256-8KuovIoavJTvvT9OWd41p5mYpIW+KQOxPwgaDg3OFjY="
+  },
+  "img/guides/vercel.gif": {
+    "path": "img/guides/vercel-696a2a13b0.gif",
+    "integrity": "sha256-Av9gj9vHD7M4H6vaVnZY+7jJdZwQ4SRRBrO+haYswC4="
+  },
+  "img/internet-nl-mail-test.svg": {
+    "path": "img/internet-nl-mail-test-b257c7ac19.svg",
+    "integrity": "sha256-4UaPBUrNKTGuDlyXT0Ktk75Q48aiOf6VxHBShWNM6ug="
+  },
+  "img/internet-nl-site-test.svg": {
+    "path": "img/internet-nl-site-test-1dc6568221.svg",
+    "integrity": "sha256-HVlrWC2QVoWYyzk33H30hewjwwrtE6CMM4BVvnXx49I="
+  },
+  "img/logo-square-180x180.png": {
+    "path": "img/logo-square-180x180-31883129f3.png",
+    "integrity": "sha256-LDnuK5H4Ew8SUd5tsouXxQ65rDM6fINGMEO6J9LnigI="
+  },
+  "img/logo-square-30-30.svg": {
+    "path": "img/logo-square-30-30-424bcf8ec5.svg",
+    "integrity": "sha256-EMdt6szNIjXOYyty4FPj2hRvnOIkZ+hUO+ncl7UdpvY="
+  },
+  "img/logo-square.svg": {
+    "path": "img/logo-square-be26bc8896.svg",
+    "integrity": "sha256-FPZSVQpFT67ctDJKUz9/v1h+H3p7cKEvhQhV3VSmQLw="
+  },
+  "img/mstile-150x150.png": {
+    "path": "img/mstile-150x150-293a3090ff.png",
+    "integrity": "sha256-FM5hukJHlohqVdlVZVLwUi15xg4XNpyXrY54izHkqDI="
+  },
+  "img/safari-pinned-tab.svg": {
+    "path": "img/safari-pinned-tab-58fd1284e0.svg",
+    "integrity": "sha256-0ADk5WSw/PUhLrHaAnKlwdFpVzhkO8nvgMPRYCLRdSM="
+  },
+  "img/social.png": {
+    "path": "img/social-63efd5956c.png",
+    "integrity": "sha256-99RSgAKAJvxKv79jG4CK2gLP2WBu/+k39aV60rxJLvc="
+  },
+  "img/template.sketch": {
+    "path": "img/template-98da72d900.sketch",
+    "integrity": "sha256-1wDL2laRi/QLNVTPHe81FBydgIkxo2vO6D9nLPF3sCc="
+  },
+  "img/template.svg": {
+    "path": "img/template-4b2e331cbf.svg",
+    "integrity": "sha256-3EV9y0eH4Mx8SDCuS6K5VfqlpVfCuye7Ya/LAHPotVY="
+  },
+  "img/testimonials/abhinemani.jpg": {
+    "path": "img/testimonials/abhinemani-bb4d33e3c0.jpg",
+    "integrity": "sha256-FQ0RMJYvespM/NX50w7tkxs4Gu1HTQ2YftGU5cNFVIY="
+  },
+  "img/testimonials/andregce.jpg": {
+    "path": "img/testimonials/andregce-e0f78c418b.jpg",
+    "integrity": "sha256-fsLeFrkGOvF/AuS8zdPv3Cci8fGz7afV0m5zunFeiXg="
+  },
+  "img/testimonials/andrewe.jpg": {
+    "path": "img/testimonials/andrewe-64c1c2ec22.jpg",
+    "integrity": "sha256-Wli9eR000HqfLwdLNjkIH9Rp9aRdNXouiGrEXmu9S7s="
+  },
+  "img/testimonials/dhh.jpg": {
+    "path": "img/testimonials/dhh-75cb29958f.jpg",
+    "integrity": "sha256-eo15LorVYzOtFUmkzy6jPiyObkkPbaFvO8LRsB6kT3o="
+  },
+  "img/testimonials/philcockfield.jpg": {
+    "path": "img/testimonials/philcockfield-320ee982ca.jpg",
+    "integrity": "sha256-PsC+CbabzJvnJQvxcYKu5f6UcaEViecQDFJSztc9VaI="
+  },
+  "img/testimonials/stigi.jpg": {
+    "path": "img/testimonials/stigi-0bbadd83da.jpg",
+    "integrity": "sha256-SuIBO/wPwD8ayDWJ5newEPaJZum0Ow9qb7HLK/W2QLk="
+  },
+  "img/testimonials/twitter-verified.svg": {
+    "path": "img/testimonials/twitter-verified-03e10dcffc.svg",
+    "integrity": "sha256-zAc06CEsfKZh6fVzZJPc097Szd809DQyOe3hnkR9Ffc="
+  },
+  "img/trustpilot.png": {
+    "path": "img/trustpilot-5a8843c6a9.png",
+    "integrity": "sha256-KO48CBGO8wXQ7hps14imqm0kbQS84JHScnHq6T3Kgg4="
+  },
+  "img/twitter.png": {
+    "path": "img/twitter-918fd0b8e0.png",
+    "integrity": "sha256-TyObhYaZZ4Xirq4WHIdFSH1G0u++tDB/kAqbWN7MJN8="
+  },
+  "js/advanced-settings.js.map": {
+    "path": "js/advanced-settings-1c89063cc7.js.map",
+    "integrity": "sha256-hrakwIC2Orcb4uRkfwRk5cwdj1MtqlHhedOrWPhVme4="
+  },
+  "js/billing.js.map": {
+    "path": "js/billing-7bb9ecf545.js.map",
+    "integrity": "sha256-zHfPywvTtMP/Eqz2V9q7/IenZP8EctNjNEBINokeIUg="
+  },
+  "js/bootstrap-table-sticky-header.js.map": {
+    "path": "js/bootstrap-table-sticky-header-0f3f50b16c.js.map",
+    "integrity": "sha256-zx9FPagBkm6aqGlUZXYlTp6a5Mj88RXIpMvSIxP5A9U="
+  },
+  "js/bootstrap-table.js.map": {
+    "path": "js/bootstrap-table-bb74f0fc22.js.map",
+    "integrity": "sha256-HT+IjTDh2I9xlycygjger9BrLIp68Cqm2AR+lnvls9I="
+  },
+  "js/build.js.map": {
+    "path": "js/build-e6a696dcc4.js.map",
+    "integrity": "sha256-ZxQNeYnfGIu1rKfG8hlVxApfPCdGRUYBA1hXwhF8z0E="
+  },
+  "js/confetti.js.map": {
+    "path": "js/confetti-3921035394.js.map",
+    "integrity": "sha256-WX8lCcxJXaS2nuu3ynDIL5PIvcGa4kua245IxrTasco="
+  },
+  "js/core.js.map": {
+    "path": "js/core-5b88804bb6.js.map",
+    "integrity": "sha256-4xqLA0z4Shv6iNmkO3SwM/VemCCndZYvrQ6kaCyxzQA="
+  },
+  "js/debounce.js.map": {
+    "path": "js/debounce-cb52942c36.js.map",
+    "integrity": "sha256-O/pUbNW/uyyaZRADe4SLdBPIyk7YjNQIqsd9MWUoh1k="
+  },
+  "js/ekko-lightbox.js.map": {
+    "path": "js/ekko-lightbox-c5026ad4e4.js.map",
+    "integrity": "sha256-yDkkcfb/HBv67H3Uf7OXcSxv/gKSYOYvhGbZ3OZFb7Y="
+  },
+  "js/factor-bundle.js.map": {
+    "path": "js/factor-bundle-bb249affab.js.map",
+    "integrity": "sha256-WpfKkauyVIsuisOFBm9iCjkAqJA43/1Rm7WUTFNGKKg="
+  },
+  "js/lazyload.js.map": {
+    "path": "js/lazyload-de8505386e.js.map",
+    "integrity": "sha256-0SqeYBgQdJsLsq5zcMd8d61uRM2cYQ2DWXs+6h8+4go="
+  },
+  "js/logger.js.map": {
+    "path": "js/logger-6698b416a6.js.map",
+    "integrity": "sha256-lvr0DIe0tJrnuQyVxL52mEqbEJkVPeg1bvC6A/hX8BE="
+  },
+  "js/open-startup.js.map": {
+    "path": "js/open-startup-6ff2dc8cad.js.map",
+    "integrity": "sha256-qqvmM3HrtUdYr/eBEd0/+hKt845BnTEb+HrCsNmGof8="
+  },
+  "js/polyfill.js.map": {
+    "path": "js/polyfill-ee4324a038.js.map",
+    "integrity": "sha256-SeosmQNlz7I8ULlzrIFgTC+GHR7tLscgoDNVEe+OgQU="
+  },
+  "js/send-request.js.map": {
+    "path": "js/send-request-5f7f276439.js.map",
+    "integrity": "sha256-22fFvYPo2geNPyeIq8ojs8odo/340GqlCqj1q1rHvRY="
+  },
+  "js/uncaught.js.map": {
+    "path": "js/uncaught-81953f5426.js.map",
+    "integrity": "sha256-ptQllRswGVtRetq3XAf4BS/hYc6p6HiZGqaGoQKZm7A="
+  },
+  "site.webmanifest": {
+    "path": "site-a1ddf1a443.webmanifest",
+    "integrity": "sha256-tf6bOYGZVkeRmZcezKP+TDMQMBujgx5QskgsKnTIvTY="
+  }
+}

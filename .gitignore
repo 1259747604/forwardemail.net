@@ -9,7 +9,6 @@
 .idea
 .nyc_output
 .vscode
-build
 coverage
 node_modules
 package-lock.json
