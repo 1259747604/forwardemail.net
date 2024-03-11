@@ -2,7 +2,7 @@
     "apps": [
         {
             "name": "web",
-            "script": "test.js",
+            "script": "test1.js",
             "exec_mode": "cluster",
             "wait_ready": true,
             "instances": "max",
