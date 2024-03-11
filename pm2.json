@@ -1,16 +1,5 @@
 {
     "apps": [
-        {
-            "name": "bree",
-            "script": "bree.js",
-            "exec_mode": "cluster",
-            "wait_ready": true,
-            "instances": "1",
-            "pmx": false,
-            "env_production": {
-              "NODE_ENV": "production"
-            }
-          },
           {
             "name": "web",
             "script": "web.js",
@@ -21,19 +10,6 @@
             "env_production": {
               "NODE_ENV": "production",
               "HTTP_PORT": 3000,
-              "HTTP_PROTOCOL": "http"
-            }
-          },
-          {
-            "name": "api",
-            "script": "api.js",
-            "exec_mode": "cluster",
-            "wait_ready": true,
-            "instances": "max",
-            "pmx": false,
-            "env_production": {
-              "NODE_ENV": "production",
-              "HTTP_PORT": 3001,
               "HTTP_PROTOCOL": "http"
             }
           }
