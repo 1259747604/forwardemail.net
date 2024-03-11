@@ -12,18 +12,6 @@
               "HTTP_PORT": 3000,
               "HTTP_PROTOCOL": "http"
             }
-          },
-          {
-            "name": "proxy",
-            "script": "proxy.js",
-            "exec_mode": "cluster",
-            "wait_ready": true,
-            "instances": "max",
-            "pmx": false,
-            "env_production": {
-              "NODE_ENV": "production",
-              "PROXY_PORT": 80
-            }
           }
     ]
   }
