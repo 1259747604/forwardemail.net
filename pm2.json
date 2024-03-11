@@ -2,7 +2,7 @@
     "apps": [
         {
             "name": "web1",
-            "script": "test.js",
+            "script": "test1.js",
             "exec_mode": "fork",
             "wait_ready": true,
             "instances": "max",
