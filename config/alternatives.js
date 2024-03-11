@@ -2632,7 +2632,7 @@ for (const name of Object.keys(obj)) {
 }
 
 (async () => {
-  const browser = await puppeteer.launch();
+//   const browser = await puppeteer.launch();
 
   for (const a of alternatives) {
     // name, description, pricing, storage (string)
@@ -2656,23 +2656,23 @@ for (const name of Object.keys(obj)) {
     if (!fs.existsSync(p)) {
       console.error(`${a.name} missing valid "screenshot" at ${p}`);
       // eslint-disable-next-line no-await-in-loop
-      const page = await browser.newPage();
-      // eslint-disable-next-line no-await-in-loop
-      await page.setViewport({
-        width: 1366,
-        height: 768,
-        deviceScaleFactor: 2
-      });
-      // eslint-disable-next-line no-await-in-loop
-      await page.goto(a.website);
-      try {
-        // eslint-disable-next-line no-await-in-loop
-        await page.screenshot({
-          path: p
-        });
-      } catch (err) {
-        console.error(err);
-      }
+    //   const page = await browser.newPage();
+    //   // eslint-disable-next-line no-await-in-loop
+    //   await page.setViewport({
+    //     width: 1366,
+    //     height: 768,
+    //     deviceScaleFactor: 2
+    //   });
+    //   // eslint-disable-next-line no-await-in-loop
+    //   await page.goto(a.website);
+    //   try {
+    //     // eslint-disable-next-line no-await-in-loop
+    //     await page.screenshot({
+    //       path: p
+    //     });
+    //   } catch (err) {
+    //     console.error(err);
+    //   }
     }
 
     // unlimited_domains, unlimited_aliases, smtp, imap, pop3, api, openpgp, wkd (boolean | string)
@@ -2696,7 +2696,7 @@ for (const name of Object.keys(obj)) {
     }
   }
 
-  await browser.close();
+//   await browser.close();
 })();
 
 // add points

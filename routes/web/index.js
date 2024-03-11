@@ -65,88 +65,88 @@ router
   // mermaid charts
   // TODO: once svg fixed we can use that instead
   // <https://github.com/mermaid-js/mermaid-cli/issues/632>
-  .get('/mermaid.png', async (ctx) => {
-    let browser;
-    try {
-      if (!isSANB(ctx.query.code)) throw new Error('Code missing');
-      if (ctx.query.theme !== 'dark' && ctx.query.theme !== 'default')
-        throw new Error('Theme invalid');
+//   .get('/mermaid.png', async (ctx) => {
+//     let browser;
+//     try {
+//       if (!isSANB(ctx.query.code)) throw new Error('Code missing');
+//       if (ctx.query.theme !== 'dark' && ctx.query.theme !== 'default')
+//         throw new Error('Theme invalid');
 
-      const code = decrypt(ctx.query.code);
-      const hash = revHash(`${ctx.query.theme}:${code}`);
+//       const code = decrypt(ctx.query.code);
+//       const hash = revHash(`${ctx.query.theme}:${code}`);
 
-      if (global.mermaid && global.mermaid[hash]) {
-        ctx.type = 'image/png';
-        ctx.set('Cache-Control', `public, max-age=${MAX_AGE}`);
-        // <https://github.com/koajs/compress/blob/41d501bd5db02d810572cfe154088c5fa6fcb957/lib/index.js#L89-L90>
-        ctx.set('Content-Encoding', 'gzip');
-        ctx.res.removeHeader('Content-Length');
-        ctx.body = global.mermaid[hash];
-        return;
-      }
+//       if (global.mermaid && global.mermaid[hash]) {
+//         ctx.type = 'image/png';
+//         ctx.set('Cache-Control', `public, max-age=${MAX_AGE}`);
+//         // <https://github.com/koajs/compress/blob/41d501bd5db02d810572cfe154088c5fa6fcb957/lib/index.js#L89-L90>
+//         ctx.set('Content-Encoding', 'gzip');
+//         ctx.res.removeHeader('Content-Length');
+//         ctx.body = global.mermaid[hash];
+//         return;
+//       }
 
-      // attempt to find in redis cache a buffer
-      try {
-        const buffer = await pTimeout(
-          ctx.client.getBuffer(`buffer-gzip-mermaid:${hash}`),
-          1000
-        );
-        if (buffer) {
-          if (!global.mermaid) global.mermaid = {};
-          global.mermaid[hash] = buffer;
-          ctx.type = 'image/png';
-          ctx.set('Cache-Control', `public, max-age=${MAX_AGE}`);
-          // <https://github.com/koajs/compress/blob/41d501bd5db02d810572cfe154088c5fa6fcb957/lib/index.js#L89-L90>
-          ctx.set('Content-Encoding', 'gzip');
-          ctx.res.removeHeader('Content-Length');
-          ctx.body = buffer;
-          return;
-        }
-      } catch (err) {
-        ctx.logger.error(err);
-      }
+//       // attempt to find in redis cache a buffer
+//       try {
+//         const buffer = await pTimeout(
+//           ctx.client.getBuffer(`buffer-gzip-mermaid:${hash}`),
+//           1000
+//         );
+//         if (buffer) {
+//           if (!global.mermaid) global.mermaid = {};
+//           global.mermaid[hash] = buffer;
+//           ctx.type = 'image/png';
+//           ctx.set('Cache-Control', `public, max-age=${MAX_AGE}`);
+//           // <https://github.com/koajs/compress/blob/41d501bd5db02d810572cfe154088c5fa6fcb957/lib/index.js#L89-L90>
+//           ctx.set('Content-Encoding', 'gzip');
+//           ctx.res.removeHeader('Content-Length');
+//           ctx.body = buffer;
+//           return;
+//         }
+//       } catch (err) {
+//         ctx.logger.error(err);
+//       }
 
-      if (!parseMMD)
-        await pWaitFor(() => Boolean(parseMMD), { timeout: ms('5s') });
+//       if (!parseMMD)
+//         await pWaitFor(() => Boolean(parseMMD), { timeout: ms('5s') });
 
-      browser = await puppeteer.launch();
-      const svg = await parseMMD(browser, code, 'png', {
-        viewport: {
-          width: 3000,
-          height: 3000,
-          deviceScaleFactor: 2
-        },
-        mermaidConfig: {
-          diagramPadding: 100,
-          theme: ctx.query.theme
-        },
-        backgroundColor: ctx.query.theme === 'default' ? 'white' : 'transparent'
-      });
-      const compressed = await gzip(svg);
-      if (!global.mermaid) global.mermaid = {};
-      global.mermaid[hash] = compressed;
-      ctx.type = 'image/png';
-      ctx.set('Cache-Control', `public, max-age=${MAX_AGE}`);
-      // <https://github.com/koajs/compress/blob/41d501bd5db02d810572cfe154088c5fa6fcb957/lib/index.js#L89-L90>
-      ctx.set('Content-Encoding', 'gzip');
-      ctx.res.removeHeader('Content-Length');
-      ctx.body = svg;
-      // store buffer in cache
-      try {
-        await ctx.client.set(`buffer-gzip-mermaid:${hash}`, compressed);
-      } catch (err) {
-        ctx.logger.error(err);
-      }
-    } catch (err) {
-      if (browser)
-        browser
-          .close()
-          .then()
-          .catch((err) => ctx.logger.error(err));
-      ctx.logger.error(err);
-      throw Boom.badRequest(ctx.translateError('UNKNOWN_ERROR'));
-    }
-  });
+//     //   browser = await puppeteer.launch();
+//     //   const svg = await parseMMD(browser, code, 'png', {
+//     //     viewport: {
+//     //       width: 3000,
+//     //       height: 3000,
+//     //       deviceScaleFactor: 2
+//     //     },
+//     //     mermaidConfig: {
+//     //       diagramPadding: 100,
+//     //       theme: ctx.query.theme
+//     //     },
+//     //     backgroundColor: ctx.query.theme === 'default' ? 'white' : 'transparent'
+//     //   });
+//     //   const compressed = await gzip(svg);
+//     //   if (!global.mermaid) global.mermaid = {};
+//     //   global.mermaid[hash] = compressed;
+//     //   ctx.type = 'image/png';
+//     //   ctx.set('Cache-Control', `public, max-age=${MAX_AGE}`);
+//     //   // <https://github.com/koajs/compress/blob/41d501bd5db02d810572cfe154088c5fa6fcb957/lib/index.js#L89-L90>
+//     //   ctx.set('Content-Encoding', 'gzip');
+//     //   ctx.res.removeHeader('Content-Length');
+//     //   ctx.body = svg;
+//       // store buffer in cache
+//       try {
+//         await ctx.client.set(`buffer-gzip-mermaid:${hash}`, compressed);
+//       } catch (err) {
+//         ctx.logger.error(err);
+//       }
+//     } catch (err) {
+//     //   if (browser)
+//     //     browser
+//     //       .close()
+//     //       .then()
+//     //       .catch((err) => ctx.logger.error(err));
+//       ctx.logger.error(err);
+//       throw Boom.badRequest(ctx.translateError('UNKNOWN_ERROR'));
+//     }
+//   });
 
 const localeRouter = new Router({ prefix: '/:locale' });
 
