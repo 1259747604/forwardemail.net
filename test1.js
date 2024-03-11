@@ -6,6 +6,6 @@ const server = http.createServer((req, res) => {
     res.end('Hello, world!');
 });
 
-server.listen(3103, '127.0.0.1', () => {
+server.listen(3103, '0.0.0.0', () => {
     console.log('Server running at http://localhost:3103/');
 });
