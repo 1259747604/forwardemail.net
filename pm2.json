@@ -10,7 +10,7 @@
         "env_production": {
           "NODE_ENV": "production",
           "HTTP_PORT": 443,
-          "HTTP_PROTOCOL": "https"
+          "HTTP_PROTOCOL": "http"
         }
       },
       {
