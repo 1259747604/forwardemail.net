@@ -76,6 +76,7 @@ const i18n = require('#helpers/i18n');
 const { developerDocs } = require('#config/utilities');
 
 const PROD = config.env === 'production';
+console.log("🚀 ~ config.env:", config.env)
 const DEV = config.env === 'development';
 const TEST = config.env === 'test';
 
