@@ -1,11 +1,11 @@
 {
     "apps": [
         {
-            "name": "web2",
-            "script": "test1.js",
+            "name": "web",
+            "script": "web.js",
             "exec_mode": "fork",
             "wait_ready": true,
-            "instances": "max",
+            "instances": "1",
             "pmx": false,
             "env_production": {
               "NODE_ENV": "production",
