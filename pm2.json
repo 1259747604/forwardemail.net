@@ -29,7 +29,7 @@
       {
         "name": "bree",
         "script": "bree.js",
-        "exec_mode": "fork",
+        "exec_mode": "cluster",
         "wait_ready": true,
         "instances": "1",
         "pmx": false,
@@ -52,7 +52,7 @@
       {
         "name": "imap-2993",
         "script": "imap.js",
-        "exec_mode": "fork",
+        "exec_mode": "cluster",
         "wait_ready": true,
         "instances": "1",
         "pmx": false,
@@ -76,7 +76,7 @@
       {
         "name": "pop3-2995",
         "script": "pop3.js",
-        "exec_mode": "fork",
+        "exec_mode": "cluster",
         "wait_ready": true,
         "instances": "1",
         "pmx": false,
@@ -100,7 +100,7 @@
       {
         "name": "smtp-tls-2587",
         "script": "smtp.js",
-        "exec_mode": "fork",
+        "exec_mode": "cluster",
         "wait_ready": true,
         "instances": "1",
         "pmx": false,
@@ -112,7 +112,7 @@
       {
         "name": "smtp-tls-25",
         "script": "smtp.js",
-        "exec_mode": "fork",
+        "exec_mode": "cluster",
         "wait_ready": true,
         "instances": "1",
         "pmx": false,
@@ -124,7 +124,7 @@
       {
         "name": "smtp-tls-2525",
         "script": "smtp.js",
-        "exec_mode": "fork",
+        "exec_mode": "cluster",
         "wait_ready": true,
         "instances": "1",
         "pmx": false,
@@ -148,7 +148,7 @@
       {
         "name": "smtp-ssl-2465",
         "script": "smtp.js",
-        "exec_mode": "fork",
+        "exec_mode": "cluster",
         "wait_ready": true,
         "instances": "1",
         "pmx": false,
@@ -160,7 +160,7 @@
       {
         "name": "smtp-bree",
         "script": "smtp-bree.js",
-        "exec_mode": "fork",
+        "exec_mode": "cluster",
         "wait_ready": true,
         "instances": "1",
         "pmx": false,
@@ -182,7 +182,7 @@
       {
         "name": "sqlite-bree",
         "script": "sqlite-bree.js",
-        "exec_mode": "fork",
+        "exec_mode": "cluster",
         "wait_ready": true,
         "instances": "1",
         "pmx": false,
