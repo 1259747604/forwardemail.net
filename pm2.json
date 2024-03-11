@@ -23,7 +23,7 @@
         "env_production": {
           "NODE_ENV": "production",
           "HTTP_PORT": 3001,
-          "HTTP_PROTOCOL": "https"
+          "HTTP_PROTOCOL": "http"
         }
       },
       {
