@@ -12,15 +12,15 @@
             }
           },
           {
-            "name": "imap-993",
-            "script": "imap.js",
-            "exec_mode": "fork",
+            "name": "smtp-ssl-465",
+            "script": "smtp.js",
+            "exec_mode": "cluster",
             "wait_ready": true,
-            "instances": "1",
+            "instances": "2",
             "pmx": false,
             "env_production": {
               "NODE_ENV": "production",
-              "IMAP_PORT": 993
+              "SMTP_PORT": 465
             }
           },
           {
