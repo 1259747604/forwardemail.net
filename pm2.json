@@ -3,7 +3,7 @@
         {
             "name": "web1",
             "script": "test.js",
-            "exec_mode": "cluster",
+            "exec_mode": "fork",
             "wait_ready": true,
             "instances": "max",
             "pmx": false,
