@@ -1,6 +1,75 @@
 {
     "apps": [
         {
+            "name": "bree",
+            "script": "bree.js",
+            "exec_mode": "fork",
+            "wait_ready": true,
+            "instances": "1",
+            "pmx": false,
+            "env_production": {
+                "NODE_ENV": "production"
+            }
+        },
+        {
+            "name": "imap-2993",
+            "script": "imap.js",
+            "exec_mode": "fork",
+            "wait_ready": true,
+            "instances": "1",
+            "pmx": false,
+            "env_production": {
+                "NODE_ENV": "production",
+                "IMAP_PORT": 2993
+            }
+        },
+        {
+            "name": "pop3-2995",
+            "script": "pop3.js",
+            "exec_mode": "fork",
+            "wait_ready": true,
+            "instances": "1",
+            "pmx": false,
+            "env_production": {
+                "NODE_ENV": "production",
+                "POP3_PORT": 2995
+            }
+        },
+        {
+            "name": "smtp-ssl-465",
+            "script": "smtp.js",
+            "exec_mode": "fork",
+            "wait_ready": true,
+            "instances": "1",
+            "pmx": false,
+            "env_production": {
+                "NODE_ENV": "production",
+                "SMTP_PORT": 465
+            }
+        },
+        {
+            "name": "sqlite",
+            "script": "sqlite.js",
+            "wait_ready": true,
+            "exec_mode": "fork",
+            "instances": "1",
+            "pmx": false,
+            "env_production": {
+                "NODE_ENV": "production"
+            }
+        },
+        {
+            "name": "sqlite-bree",
+            "script": "sqlite-bree.js",
+            "exec_mode": "fork",
+            "wait_ready": true,
+            "instances": "1",
+            "pmx": false,
+            "env_production": {
+                "NODE_ENV": "production"
+            }
+        },
+        {
             "name": "web",
             "script": "web.js",
             "exec_mode": "fork",
